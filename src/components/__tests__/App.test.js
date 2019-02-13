@@ -1,12 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../App';
-import CommentBox from '../CommentBox';
-import CommentsList from '../CommentsList';
+import App from 'components/App';
+import CommentBox from 'components/CommentBox';
+import CommentsList from 'components/CommentsList';
 
+let wrapped;
 
-const wrapped = shallow(<App />);
+beforeEach(() => {
+    wrapped = shallow(<App />);
+})
 
 it('shows comment box component', () => {
     expect(wrapped.find(CommentBox).length).toEqual(1);

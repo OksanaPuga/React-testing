@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CommentBox from './CommentBox';
-import CommetsList from './CommentsList';
+import CommentBox from 'components/CommentBox';
+import CommetsList from 'components/CommentsList';
 
 export default () => (
     <div>
