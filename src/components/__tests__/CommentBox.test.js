@@ -1,12 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import Root from 'Root';
 import CommentBox from 'components/CommentBox';
 
 let wrapped;
 const text = 'new comment';
 
 beforeEach(() => {
-    wrapped = mount(<CommentBox />);
+    wrapped = mount(<Root><CommentBox /></Root>);
 });
 
 afterEach(() => {
