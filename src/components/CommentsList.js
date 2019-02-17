@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 class CommentsList extends React.Component {
     render() {
         return (
-            <ul>{this.renderList()}</ul>
+            <div>
+                <h4>Comments List</h4>
+                <ul>{this.renderList()}</ul>
+            </div>
         );
     }
 
