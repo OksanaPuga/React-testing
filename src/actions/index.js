@@ -13,4 +13,9 @@ export const fetchComments = () => {
         type: cons.FETCH_COMMENTS,
         payload: response
     };
-}
+};
+
+export const changeAuth = isLoggedIn => ({
+    type: cons.CHANGE_AUTH,
+    payload: isLoggedIn
+});
